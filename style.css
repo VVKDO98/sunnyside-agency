@@ -21,6 +21,9 @@ p {
   justify-content: space-between;
   align-items: center;
 }
+.nav .nav__list .nav__burger {
+  display: none;
+}
 .nav .nav__list .nav__ul {
   display: flex;
   flex-direction: row;
@@ -64,6 +67,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .header .header__title {
   color: #ffffff;
@@ -313,4 +317,113 @@ p {
 }
 .footer .footer__content .footer__social .footer__links--social:nth-child(-n+3) {
   margin-right: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  .nav {
+    padding: 50px 25px;
+  }
+  .nav .nav__logo {
+    height: 26px;
+  }
+  .nav .nav__list .nav__burger {
+    display: inline;
+  }
+  .nav .nav__list .nav__ul {
+    display: none;
+  }
+  .header {
+    height: 100vh;
+  }
+  .header .header__title {
+    font-size: 40px;
+    margin: 0 auto 50px auto;
+  }
+  .card {
+    flex-direction: column;
+  }
+  .card .card__content {
+    width: 100%;
+  }
+  .card .card__content:nth-of-type(1) {
+    order: 2;
+  }
+  .card .card__content:nth-of-type(2) {
+    order: 1;
+  }
+  .card .card__content:nth-of-type(3) {
+    order: 3;
+  }
+  .card .card__content:nth-of-type(4) {
+    order: 4;
+  }
+  .card .card__content:nth-of-type(5) {
+    order: 5;
+  }
+  .card .card__content:nth-of-type(6) {
+    order: 6;
+  }
+  .card .card__content .card__items {
+    height: 450px;
+    padding: 64px 24px;
+    align-items: center;
+  }
+  .card .card__content .card__items .card__title {
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+  .card .card__content .card__items .card__title, .card .card__content .card__items .card__text {
+    text-align: center;
+  }
+  .card .card__content .card__items--egg {
+    height: 300px;
+  }
+  .card .card__content .card__items--glass {
+    height: 300px;
+  }
+  .card .card__content .card__items--cherry {
+    height: 600px;
+    padding: 64px 24px;
+  }
+  .card .card__content .card__items--cherry .card__text {
+    margin: 0;
+  }
+  .card .card__content .card__items--orange {
+    height: 600px;
+    padding: 64px 24px;
+  }
+  .card .card__content .card__items--orange .card__text {
+    margin: 0;
+  }
+  .testimonials {
+    height: 1150px;
+  }
+  .testimonials .testimonials__title {
+    margin: 60px auto;
+    font-size: 16px;
+  }
+  .testimonials .testimonials__content {
+    height: 100%;
+    flex-direction: column;
+    padding: 0px 24px;
+  }
+  .testimonials .testimonials__content .testimonials__card {
+    padding: 0;
+  }
+  .testimonials .testimonials__content .testimonials__card .testimonials_image {
+    margin-bottom: 30px;
+  }
+  .testimonials .testimonials__content .testimonials__card .testimonials__text {
+    margin-bottom: 30px;
+  }
+  .testimonials .testimonials__content .testimonials__card .testimonials__job {
+    margin-bottom: 60px;
+  }
+  .block {
+    flex-wrap: wrap;
+  }
+  .block .block__image {
+    width: 50%;
+    height: 50%;
+  }
 }/*# sourceMappingURL=style.css.map */
