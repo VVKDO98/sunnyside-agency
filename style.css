@@ -1,1 +1,72 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  line-height: 1.2;
+}
+
+.nav {
+  position: absolute;
+  padding: 50px 50px;
+  width: 100%;
+  height: 56px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .nav__list .nav__ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav .nav__list .nav__ul .nav__item {
+  margin-right: 47px;
+  font-family: "Barlow", sans-serif;
+}
+.nav .nav__list .nav__ul .nav__item a {
+  color: white;
+  font-size: 18px;
+}
+.nav .nav__list .nav__ul .nav__item--button {
+  background-color: #ffffff;
+  padding: 15px 30px;
+  border-radius: 50px;
+}
+.nav .nav__list .nav__ul .nav__item--button a {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #19536C;
+}
+.nav .nav__list .nav__ul .nav__item--button:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.nav .nav__list .nav__ul .nav__item--button:hover a {
+  color: #ffffff;
+}
+
+.header {
+  width: 100%;
+  height: 800px;
+  background-image: url(assets/img/orange-header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header .header__title {
+  color: #ffffff;
+  font-size: 56px;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  letter-spacing: 8.75px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}/*# sourceMappingURL=style.css.map */
