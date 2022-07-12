@@ -4,6 +4,7 @@ $color-green: #24554A;
 $color-green-light: #3E7467;
 $color-blue: #052C3B;
 $color-blue-light: #19536C;
+$color-grey: #A7AAAD;
 
 * {
     margin: 0;
@@ -192,4 +193,131 @@ p{font-family: 'Barlow', sans-serif;}
 .testimonials{
     width: 100%;
     height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h3{
+        font-size: 20px;
+        font-weight: 900;
+        font-family: 'Fraunces', serif;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        margin-bottom: 80px;
+        color: $color-grey;
+    }
+    .testimonials__content{
+        display: flex;
+        flex-direction: row;
+        padding: 0px 160px;
+        .testimonials__card{
+            padding: 0px 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .testimonials_image{
+                margin-bottom: 60px;
+            }
+            .testimonials__text{
+                margin-bottom: 70px;
+                font-size: 18px;
+                text-align: center;
+                line-height: 32px;
+                color: #5b636d;
+            }
+            .testimonials__name{
+                font-family: 'Fraunces', serif;
+                font-size: 18px;
+                margin-bottom: 9px;
+                color: $color-dark-blue;
+            }
+            .testimonials__job{
+                font-size: 14px;
+                color: #a7aaad;
+            }
+        }
+    }
+}
+
+.block{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    .block__image{
+        width: 25%;
+        height: 100%;
+        .block__image--1{
+            width: 100%;
+            height: 100%;
+            background-image: url(assets/img/milk.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+        .block__image--2{
+            width: 100%;
+            height: 100%;
+            background-image: url(assets/img/orange-on-blue.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+        .block__image--3{
+            width: 100%;
+            height: 100%;
+            background-image: url(assets/img/cone.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+        .block__image--4{
+            width: 100%;
+            height: 100%;
+            background-image: url(assets/img/sugar.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+    }
+}
+
+.footer{
+    width: 100%;
+    height: 350px;
+    background-color: #90d4c6;
+    .footer__content{
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .footer__logo{
+            margin: 72px auto 40px auto;
+        }
+        .footer__menu{
+            margin: 0px auto 90px auto;
+            .footer__links:nth-child(-n+2){
+                margin-right: 60px;
+            }
+            .footer__links{
+                font-size: 18px;
+                font-family: 'Barlow', sans-serif;
+                color: #458d7e;
+            }
+        }
+        .footer__social{
+            margin: 0 auto 72px auto;
+            .footer__links--social:nth-child(-n+3){
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    
 }
