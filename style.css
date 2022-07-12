@@ -6,6 +6,10 @@
   line-height: 1.2;
 }
 
+p {
+  font-family: "Barlow", sans-serif;
+}
+
 .nav {
   position: absolute;
   padding: 50px 50px;
@@ -40,7 +44,7 @@
   font-weight: 700;
   font-size: 15px;
   text-transform: uppercase;
-  color: #19536C;
+  color: #24303E;
 }
 .nav .nav__list .nav__ul .nav__item--button:hover {
   background-color: rgba(255, 255, 255, 0.25);
@@ -68,5 +72,122 @@
   font-weight: 900;
   letter-spacing: 8.75px;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  margin-bottom: 90px;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card .card__content {
+  width: 50%;
+}
+.card .card__content .card__items {
+  width: 100%;
+  height: 600px;
+  padding: 100px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card .card__content .card__items .card__title {
+  font-family: "Fraunces", serif;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.card .card__content .card__items .card__text {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.card .card__content .card__items .card__link {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #24303E;
+}
+.card .card__content .card__items .card__link:hover {
+  color: #19536C;
+}
+.card .card__content .card__items--egg {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/img/egg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.card .card__content .card__items--glass {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/img/glass.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.card .card__content .card__items--cherry {
+  width: 100%;
+  height: 600px;
+  padding: 80px 190px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url(assets/img/cherry.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.card .card__content .card__items--cherry .card__title {
+  font-family: "Fraunces", serif;
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #24554A;
+}
+.card .card__content .card__items--cherry .card__text {
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #3E7467;
+}
+.card .card__content .card__items--orange {
+  width: 100%;
+  height: 600px;
+  padding: 80px 190px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url(assets/img/orange.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.card .card__content .card__items--orange .card__title {
+  font-family: "Fraunces", serif;
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #052C3B;
+  opacity: 0.75;
+}
+.card .card__content .card__items--orange .card__text {
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #19536C;
+}
+
+.testimonials {
+  width: 100%;
+  height: 800px;
 }/*# sourceMappingURL=style.css.map */
