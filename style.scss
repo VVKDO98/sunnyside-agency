@@ -385,7 +385,9 @@ p{font-family: 'Barlow', sans-serif;}
         }
         .nav__list{
             .nav__burger{display: inline;}
-            .nav__ul{display: none;}
+            .nav__ul{
+                display: none;
+            }
         }
     }
     .header{
@@ -483,7 +485,9 @@ p{font-family: 'Barlow', sans-serif;}
     .nav{
         .nav__list{
             .nav__burger{display: inline;}
-            .nav__ul{display: none;}
+            .nav__ul{
+                display: none;
+            }
         }
     }
     .card{
