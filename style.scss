@@ -35,7 +35,13 @@ p{font-family: 'Barlow', sans-serif;}
             .nav__item{
                 margin-right: 47px;
                 font-family: 'Barlow', sans-serif;
-                a{color: white; font-size: 18px;}
+                font-weight: 600;
+                a{
+                    color: white; font-size: 18px;
+                    &:hover{
+                        color: $color-dark-blue;
+                    }
+                }
                 &--button{
                     background-color: #ffffff;
                     padding: 15px 30px;
@@ -107,13 +113,53 @@ p{font-family: 'Barlow', sans-serif;}
                 margin-bottom: 30px;
             }
             .card__link{
-                font-family: 'Fraunces', serif;
-                font-weight: 900;
-                font-size: 15px;
-                text-transform: uppercase;
-                color: $color-dark-blue;
-                &:hover{
-                    color: $color-blue-light;
+                &--yellow{
+                    font-family: 'Fraunces', serif;
+                    font-weight: 900;
+                    font-size: 15px;
+                    text-transform: uppercase;
+                    color: $color-dark-blue;
+                    position: relative;
+                    &::after{
+                        position: absolute;
+                        bottom: -3px;
+                        left: -10px;
+                        content: "";
+                        height: 10px;
+                        width: 130px;
+                        background-color: rgba($color: #FAD400, $alpha: 0.25);
+                        border-radius: 50px;
+                        z-index: -1; 
+                    }
+                    &:hover{
+                        &::after{
+                            background-color: rgba($color: #FAD400, $alpha: 1);
+                        }
+                    }
+                }
+                &--red{
+                    font-family: 'Fraunces', serif;
+                    font-weight: 900;
+                    font-size: 15px;
+                    text-transform: uppercase;
+                    color: $color-dark-blue;
+                    position: relative;
+                    &::after{
+                        position: absolute;
+                        bottom: -3px;
+                        left: -10px;
+                        content: "";
+                        height: 10px;
+                        width: 130px;
+                        background-color: rgba($color: #FE7766, $alpha: 0.25);
+                        border-radius: 50px;
+                        z-index: -1; 
+                    }
+                    &:hover{
+                        &::after{
+                            background-color: rgba($color: #FE7766, $alpha: 1);
+                        }
+                    }
                 }
             }
         }
@@ -308,11 +354,20 @@ p{font-family: 'Barlow', sans-serif;}
             .footer__links{
                 font-size: 18px;
                 font-family: 'Barlow', sans-serif;
+                font-weight: 600;
                 color: #458d7e;
+                &:hover{
+                    color: #ffffff;
+                }
             }
         }
         .footer__social{
             margin: 0 auto 72px auto;
+            .footer__links--social{
+                img:hover{
+                    filter: brightness(100);
+                }
+            }
             .footer__links--social:nth-child(-n+3){
                 margin-right: 30px;
             }

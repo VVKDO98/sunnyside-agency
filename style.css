@@ -32,10 +32,14 @@ p {
 .nav .nav__list .nav__ul .nav__item {
   margin-right: 47px;
   font-family: "Barlow", sans-serif;
+  font-weight: 600;
 }
 .nav .nav__list .nav__ul .nav__item a {
   color: white;
   font-size: 18px;
+}
+.nav .nav__list .nav__ul .nav__item a:hover {
+  color: #24303E;
 }
 .nav .nav__list .nav__ul .nav__item--button {
   background-color: #ffffff;
@@ -108,15 +112,49 @@ p {
   line-height: 30px;
   margin-bottom: 30px;
 }
-.card .card__content .card__items .card__link {
+.card .card__content .card__items .card__link--yellow {
   font-family: "Fraunces", serif;
   font-weight: 900;
   font-size: 15px;
   text-transform: uppercase;
   color: #24303E;
+  position: relative;
 }
-.card .card__content .card__items .card__link:hover {
-  color: #19536C;
+.card .card__content .card__items .card__link--yellow::after {
+  position: absolute;
+  bottom: -3px;
+  left: -10px;
+  content: "";
+  height: 10px;
+  width: 130px;
+  background-color: rgba(250, 212, 0, 0.25);
+  border-radius: 50px;
+  z-index: -1;
+}
+.card .card__content .card__items .card__link--yellow:hover::after {
+  background-color: #fad400;
+}
+.card .card__content .card__items .card__link--red {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #24303E;
+  position: relative;
+}
+.card .card__content .card__items .card__link--red::after {
+  position: absolute;
+  bottom: -3px;
+  left: -10px;
+  content: "";
+  height: 10px;
+  width: 130px;
+  background-color: rgba(254, 119, 102, 0.25);
+  border-radius: 50px;
+  z-index: -1;
+}
+.card .card__content .card__items .card__link--red:hover::after {
+  background-color: #fe7766;
 }
 .card .card__content .card__items--egg {
   width: 100%;
@@ -310,10 +348,17 @@ p {
 .footer .footer__content .footer__menu .footer__links {
   font-size: 18px;
   font-family: "Barlow", sans-serif;
+  font-weight: 600;
   color: #458d7e;
+}
+.footer .footer__content .footer__menu .footer__links:hover {
+  color: #ffffff;
 }
 .footer .footer__content .footer__social {
   margin: 0 auto 72px auto;
+}
+.footer .footer__content .footer__social .footer__links--social img:hover {
+  filter: brightness(100);
 }
 .footer .footer__content .footer__social .footer__links--social:nth-child(-n+3) {
   margin-right: 30px;
