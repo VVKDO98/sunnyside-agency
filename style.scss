@@ -1,10 +1,14 @@
 $color-dark-blue: #24303E;
-$color-text: #808397;
 $color-green: #24554A;
 $color-green-light: #3E7467;
 $color-blue: #052C3B;
 $color-blue-light: #19536C;
 $color-grey: #A7AAAD;
+$color-white: #ffffff;
+$color-yellow: #FAD400;
+$color-red: #FE7766;
+$color-footer-background: #90d4c6;
+$color-footer-link:#458d7e;
 
 * {
     margin: 0;
@@ -37,13 +41,13 @@ p{font-family: 'Barlow', sans-serif;}
                 font-family: 'Barlow', sans-serif;
                 font-weight: 600;
                 a{
-                    color: white; font-size: 18px;
+                    color: $color-white; font-size: 18px;
                     &:hover{
                         color: $color-dark-blue;
                     }
                 }
                 &--button{
-                    background-color: #ffffff;
+                    background-color: $color-white;
                     padding: 15px 30px;
                     border-radius: 50px;
                     a{
@@ -54,8 +58,8 @@ p{font-family: 'Barlow', sans-serif;}
                         color: $color-dark-blue;
                     }
                     &:hover{
-                        background-color: rgba($color: #ffffff, $alpha: 0.25);
-                        a{color: #ffffff;}
+                        background-color: rgba($color: $color-white, $alpha: 0.25);
+                        a{color: $color-white;}
                     }
                 }
             }
@@ -76,7 +80,7 @@ p{font-family: 'Barlow', sans-serif;}
     align-items: center;
     text-align: center;
     .header__title{
-        color: #ffffff;
+        color: $color-white;
         font-size: 56px;
         font-family: 'Fraunces', serif;
         font-weight: 900;
@@ -97,7 +101,7 @@ p{font-family: 'Barlow', sans-serif;}
         .card__items{
             width: 100%;
             height: 600px;
-            padding: 100px;
+            padding: 160px;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
@@ -127,13 +131,13 @@ p{font-family: 'Barlow', sans-serif;}
                         content: "";
                         height: 10px;
                         width: 130px;
-                        background-color: rgba($color: #FAD400, $alpha: 0.25);
+                        background-color: rgba($color: $color-yellow, $alpha: 0.25);
                         border-radius: 50px;
                         z-index: -1; 
                     }
                     &:hover{
                         &::after{
-                            background-color: rgba($color: #FAD400, $alpha: 1);
+                            background-color: rgba($color: $color-yellow, $alpha: 1);
                         }
                     }
                 }
@@ -151,13 +155,13 @@ p{font-family: 'Barlow', sans-serif;}
                         content: "";
                         height: 10px;
                         width: 130px;
-                        background-color: rgba($color: #FE7766, $alpha: 0.25);
+                        background-color: rgba($color: $color-red, $alpha: 0.25);
                         border-radius: 50px;
                         z-index: -1; 
                     }
                     &:hover{
                         &::after{
-                            background-color: rgba($color: #FE7766, $alpha: 1);
+                            background-color: rgba($color: $color-red, $alpha: 1);
                         }
                     }
                 }
@@ -182,7 +186,7 @@ p{font-family: 'Barlow', sans-serif;}
         .card__items--cherry{
             width: 100%;
             height: 600px;
-            padding: 80px 190px;
+            padding: 400px 190px 60px 190px;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
@@ -202,7 +206,6 @@ p{font-family: 'Barlow', sans-serif;}
             .card__text{
                 font-size: 16px;
                 line-height: 30px;
-                margin-bottom: 30px;
                 text-align: center;
                 color: $color-green-light;
             }
@@ -210,7 +213,7 @@ p{font-family: 'Barlow', sans-serif;}
         .card__items--orange{
             width: 100%;
             height: 600px;
-            padding: 80px 190px;
+            padding: 400px 190px 60px 190px;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
@@ -230,7 +233,6 @@ p{font-family: 'Barlow', sans-serif;}
             .card__text{
                 font-size: 16px;
                 line-height: 30px;
-                margin-bottom: 30px;
                 text-align: center;
                 color: $color-blue-light;
             }
@@ -334,7 +336,7 @@ p{font-family: 'Barlow', sans-serif;}
 .footer{
     width: 100%;
     height: 350px;
-    background-color: #90d4c6;
+    background-color: $color-footer-background;
     .footer__content{
         width: 80%;
         height: 100%;
@@ -355,9 +357,9 @@ p{font-family: 'Barlow', sans-serif;}
                 font-size: 18px;
                 font-family: 'Barlow', sans-serif;
                 font-weight: 600;
-                color: #458d7e;
+                color: $color-footer-link;
                 &:hover{
-                    color: #ffffff;
+                    color: $color-white;
                 }
             }
         }
@@ -458,7 +460,6 @@ p{font-family: 'Barlow', sans-serif;}
             }
         }
     }
-    
     .block{
         //height: 480px;
         flex-wrap: wrap;
@@ -467,5 +468,46 @@ p{font-family: 'Barlow', sans-serif;}
             height: 50%;
         }
     }
+    .footer{
+        .footer__content{
+            .footer__menu{
+                .footer__links:nth-child(-n+2){
+                    margin-right: 40px;
+                }
+            }
+        }
+    }
 }
 
+@media screen and (min-width: 481px) and (max-width: 1024px){
+    .nav{
+        .nav__list{
+            .nav__burger{display: inline;}
+            .nav__ul{display: none;}
+        }
+    }
+    .card{
+        .card__content{
+            .card__items{
+                padding: 64px;
+            }
+            .card__items--cherry{
+                padding: 64px;
+                .card__text{
+                    margin: 0;
+                }
+            }
+            .card__items--orange{
+                padding: 64px;
+                .card__text{
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .testimonials{
+        .testimonials__content{
+            padding: 0;
+        }
+    }
+}
