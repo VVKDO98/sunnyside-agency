@@ -39,7 +39,7 @@ p {
   font-size: 18px;
 }
 .nav .nav__list .nav__ul .nav__item a:hover {
-  color: #24303E;
+  color: #24303e;
 }
 .nav .nav__list .nav__ul .nav__item--button {
   background-color: #ffffff;
@@ -51,7 +51,7 @@ p {
   font-weight: 700;
   font-size: 15px;
   text-transform: uppercase;
-  color: #24303E;
+  color: #24303e;
 }
 .nav .nav__list .nav__ul .nav__item--button:hover {
   background-color: rgba(255, 255, 255, 0.25);
@@ -63,7 +63,7 @@ p {
 .header {
   width: 100%;
   height: 800px;
-  background-image: url(assets/img/orange-header.png);
+  background-image: url(/assets/img/orange-header.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -117,7 +117,7 @@ p {
   font-weight: 900;
   font-size: 15px;
   text-transform: uppercase;
-  color: #24303E;
+  color: #24303e;
   position: relative;
 }
 .card .card__content .card__items .card__link--yellow::after {
@@ -139,7 +139,7 @@ p {
   font-weight: 900;
   font-size: 15px;
   text-transform: uppercase;
-  color: #24303E;
+  color: #24303e;
   position: relative;
 }
 .card .card__content .card__items .card__link--red::after {
@@ -159,7 +159,7 @@ p {
 .card .card__content .card__items--egg {
   width: 100%;
   height: 100%;
-  background-image: url(assets/img/egg.jpg);
+  background-image: url(/assets/img/egg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -167,7 +167,7 @@ p {
 .card .card__content .card__items--glass {
   width: 100%;
   height: 100%;
-  background-image: url(assets/img/glass.jpg);
+  background-image: url(/assets/img/glass.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -181,7 +181,7 @@ p {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  background-image: url(assets/img/cherry.png);
+  background-image: url(/assets/img/cherry.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -191,13 +191,13 @@ p {
   font-size: 28px;
   margin-bottom: 30px;
   text-align: center;
-  color: #24554A;
+  color: #24554a;
 }
 .card .card__content .card__items--cherry .card__text {
   font-size: 16px;
   line-height: 30px;
   text-align: center;
-  color: #3E7467;
+  color: #3e7467;
 }
 .card .card__content .card__items--orange {
   width: 100%;
@@ -207,7 +207,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url(assets/img/orange.png);
+  background-image: url(/assets/img/orange.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -217,14 +217,14 @@ p {
   font-size: 28px;
   margin-bottom: 30px;
   text-align: center;
-  color: #052C3B;
+  color: #052c3b;
   opacity: 0.75;
 }
 .card .card__content .card__items--orange .card__text {
   font-size: 16px;
   line-height: 30px;
   text-align: center;
-  color: #19536C;
+  color: #19536c;
 }
 
 .testimonials {
@@ -242,7 +242,7 @@ p {
   text-transform: uppercase;
   letter-spacing: 5px;
   margin-bottom: 80px;
-  color: #A7AAAD;
+  color: #a7aaad;
 }
 .testimonials .testimonials__content {
   display: flex;
@@ -270,7 +270,7 @@ p {
   font-family: "Fraunces", serif;
   font-size: 18px;
   margin-bottom: 9px;
-  color: #24303E;
+  color: #24303e;
 }
 .testimonials .testimonials__content .testimonials__card .testimonials__job {
   font-size: 14px;
@@ -290,7 +290,7 @@ p {
 .block .block__image .block__image--1 {
   width: 100%;
   height: 100%;
-  background-image: url(assets/img/milk.png);
+  background-image: url(/assets/img/milk.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -298,7 +298,7 @@ p {
 .block .block__image .block__image--2 {
   width: 100%;
   height: 100%;
-  background-image: url(assets/img/orange-on-blue.png);
+  background-image: url(/assets/img/orange-on-blue.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -306,7 +306,7 @@ p {
 .block .block__image .block__image--3 {
   width: 100%;
   height: 100%;
-  background-image: url(assets/img/cone.png);
+  background-image: url(/assets/img/cone.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -314,7 +314,7 @@ p {
 .block .block__image .block__image--4 {
   width: 100%;
   height: 100%;
-  background-image: url(assets/img/sugar.png);
+  background-image: url(/assets/img/sugar.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -415,7 +415,8 @@ p {
     font-size: 32px;
     margin-bottom: 25px;
   }
-  .card .card__content .card__items .card__title, .card .card__content .card__items .card__text {
+  .card .card__content .card__items .card__title,
+.card .card__content .card__items .card__text {
     text-align: center;
   }
   .card .card__content .card__items--egg {
